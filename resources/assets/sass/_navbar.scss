@@ -1,0 +1,34 @@
+$search-box-width: 600px;
+
+@media (min-width: $grid-float-breakpoint) {
+	.navbar-form {
+	    text-align: center;
+	    position: absolute;
+	    right: $grid-gutter-width;
+	    left: $grid-gutter-width;
+	    z-index: 1;
+	  	
+		.form-control {
+	  		width: ($search-box-width * 7)/10;
+	  		border-radius: $border-rounded;
+	  		padding: $padding-base-vertical ($padding-base-horizontal + 10px);
+	  	}
+	}
+
+	.navbar-brand {
+		position: absolute;
+		z-index: 2;
+	}
+
+	.navbar-nav {
+		position: absolute;
+		right: $grid-gutter-width + 5px;
+		z-index: 2;
+	}
+}
+
+
+.container-addon {
+	margin-left: 20px;
+	margin-right: 20px;
+}

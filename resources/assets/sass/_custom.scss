@@ -1,0 +1,196 @@
+.content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.img-cover {
+	background-size: cover;
+}
+
+.auth-upper-text {
+	color: #fff;
+	padding: 5% 0;
+
+	h4 {
+		margin-bottom: 0;
+	}
+}
+
+.auth-lower-text {
+	color: #fff;
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+}
+
+.list-inline-bullet li:before {
+	content: '\00a0\2022\00a0\00a0';
+}
+
+#featured-content {
+	margin-top: $grid-gutter-width;
+	margin-bottom: $grid-gutter-width;
+	color: #fff;
+
+	#sejarah {
+		height: $featured-base-height;
+		background: url('../images/web/picture1.jpg');
+		background-size: cover;
+		padding:0;
+
+		.img-container {
+			position: relative;
+			top: 50%;
+			transform: perspective(1px) translateY(-50%);
+			padding: 0 30%
+		}
+
+		@media(max-width: $screen-tablet) {
+			text-align: center;
+
+			.img-container {
+				padding: 0 10%;	
+			}
+		}
+	}
+
+	#komik {
+		height: $featured-base-height/2;
+		background: url('../images/web/picture2.jpg');
+		background-size: cover;
+		border-bottom: $grid-gutter-width/2 solid $body-bg;
+
+		.img-container {
+			position: relative;
+			top: 50%;
+			transform: perspective(1px) translateY(-50%);
+			text-align: center;
+			padding: 0 10%;
+		}
+
+		@media(max-width: $screen-tablet) {
+			border-bottom: 0;
+		}
+	}
+
+	#karya {
+		height: $featured-base-height/2;
+		background: url('../images/web/picture3.jpg');
+		background-size: cover;
+		border-bottom: $grid-gutter-width/2 solid $body-bg;
+
+		.img-container {
+			position: relative;
+			top: 50%;
+			transform: perspective(1px) translateY(-50%);
+			text-align: center;
+			padding: 0 10%;
+		}
+
+		@media(max-width: $screen-tablet) {
+			border-bottom: 0;
+		}
+	}
+
+	#pengalaman {
+		height: $featured-base-height/2;
+		background: url('../images/web/picture4.jpg');
+		background-size: cover;
+		border-top: $grid-gutter-width/2 solid $body-bg;
+
+		.img-container {
+			position: relative;
+			top: 50%;
+			transform: perspective(1px) translateY(-50%);
+			text-align: center;
+		}	
+
+		@media(max-width: $screen-phone) {
+			.img-container {
+				h1 {
+					font-size: 2em;
+				}
+			}
+		}
+	}
+}
+
+#popular-product {
+	margin-bottom: $grid-gutter-width;
+
+	.book {
+		border: 1px solid $laravel-border-color;
+		margin-bottom: 10px;
+	}
+
+	.book-title {
+		padding: 0 10px;
+		margin-bottom: 5px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+    	overflow: hidden;
+	}
+
+	.book-price {
+		padding: 0 10px;
+		color: $brand-info;
+		font-size: 14pt;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+    	overflow: hidden;
+	}
+}
+
+#loops {
+	display: block;
+	max-height: 500px;
+	height: auto;
+	background: url('../images/web/bg-loop.jpg');
+	background-size: cover;
+
+	.img-container {
+		color: #fff;
+		padding: 5% 0;
+	}
+
+	@media(max-width: $screen-tablet) {
+		.img-container {
+			padding: 15% 0;
+		}
+	}
+}
+
+#promo {
+	color: #fff;
+
+	#promo-left	{
+		border: $grid-gutter-width/2 solid $body-bg;
+		background-color: #9b59b6;
+		padding: 5% 0;
+
+		h1 {
+			padding-left: 15%;
+			font-size: 4em;
+		}
+	}
+
+	#promo-right {
+		border: $grid-gutter-width/2 solid $body-bg;
+		background-color: #3498db;
+		padding: 5% 0;
+	}
+
+	h1, h2 {
+		margin: 0;
+	}
+
+	@media(max-width: $screen-tablet) {
+		#promo-left {
+			text-align: center;
+
+			h1 {
+				padding: 0;
+			}
+		}
+	}
+}
