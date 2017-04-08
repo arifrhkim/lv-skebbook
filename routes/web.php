@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('register/verify/{token}', 'Auth\VerifyController@verify');
 
 # Dashboard
-Route::get('/dashboard', 'DashboardController@index');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 # OAuth
 Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');

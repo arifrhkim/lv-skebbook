@@ -1959,7 +1959,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1265px;
+    width: 1170px;
   }
 }
 
@@ -10765,6 +10765,36 @@ body {
   content: '\00a0\2022\00a0\00a0';
 }
 
+#dashboard #sidebar {
+  background-color: #1a1d24;
+  padding-left: 30px;
+}
+
+#dashboard #sidebar[class^=col] {
+  padding: 0;
+}
+
+#dashboard #sidebar .list-group li {
+  padding-left: 30px;
+}
+
+#dashboard #sidebar .list-group a {
+  color: #fff;
+}
+
+#dashboard #sidebar .list-group a:hover, #dashboard #sidebar .list-group a.active {
+  color: #ea1830;
+}
+
+#dashboard #sidebar .list-group a:hover li, #dashboard #sidebar .list-group a.active li {
+  background-color: #ead7d9;
+  border-right: 3px solid #ea1830;
+}
+
+#dashboard #content {
+  margin-right: 15px;
+}
+
 #featured-content {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -10971,11 +11001,6 @@ body {
   }
 }
 
-.container-addon {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .app-footer #addon-footer {
   padding: 30px 0 10px 0;
   background-color: #f1f5f8;
@@ -11148,6 +11173,30 @@ body {
     display: -webkit-box;
     display: flex;
   }
+}
+
+.container-addon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.list-group {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.list-group a li {
+  padding: 10px 0;
+}
+
+.list-group a:hover {
+  text-decoration: none;
+}
+
+.list-group .divider {
+  border-top: 1px dotted rgba(245, 248, 250, 0.5);
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -27,6 +27,39 @@
 	content: '\00a0\2022\00a0\00a0';
 }
 
+#dashboard {
+	#sidebar {
+		background-color: #1a1d24;
+		padding-left: $grid-gutter-width;
+
+		&[class^=col] {
+			padding: 0;
+		}	
+
+		.list-group {
+			li {
+				padding-left: $grid-gutter-width;
+			}
+
+			a {
+				color: #fff;
+
+				&:hover, &.active {
+					color: #ea1830;
+					li {
+						background-color: #ead7d9;
+						border-right: 3px solid #ea1830;	
+					}
+				}
+			}
+		}
+	}
+
+	#content {
+		margin-right: $grid-gutter-width/2;
+	}	
+}
+
 #featured-content {
 	margin-top: $grid-gutter-width;
 	margin-bottom: $grid-gutter-width;
