@@ -14,10 +14,13 @@
 </title>
 
 <!-- Styles -->
-<link href="/css/app.css" rel="stylesheet">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/pace.css') }}" rel="stylesheet">
+
 @yield('top-style')
 
 <!-- Scripts -->
+<script src="{{ asset('js/pace.min.js') }}"></script>
 <script>
     window.Laravel = <?php echo json_encode([
         'csrfToken' => csrf_token(),

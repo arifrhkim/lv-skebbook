@@ -17,6 +17,9 @@ return [
     'buy' => 'Buy',
     'sign-in-to' => 'Sign in to Skebbook',
     'register-to' => 'Register to Skebbook',
+    'profile' => 'Profile',
+    'user' => 'User',
+    'dashboard' => 'Dashboard',
 
 
     /**

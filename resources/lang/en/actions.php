@@ -13,6 +13,16 @@ return [
     |
     */
 
+    'create' => 'Create',
     'search' => 'Search...',
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'view' => 'View',
+    'save' => 'Save',
+    'cancel' => 'Cancel',
+    'add_product' => 'Add Book',
+    'manage_product' => 'Manage Book',
+    'buy' => 'Buy',
+    'filter' => 'Filter'
 
 ];

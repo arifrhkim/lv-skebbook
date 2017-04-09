@@ -43,3 +43,10 @@ Vue.http.interceptors.push((request, next) => {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+window.axios = require('axios');
+
+window.axios.defaults.headers.common = {
+    'X-CSRF-TOKEN': window.Laravel.csrfToken,
+    'X-Requested-With': 'XMLHttpRequest'
+};

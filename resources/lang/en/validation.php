@@ -2,6 +2,17 @@
 
 return [
 
+/*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain custom error messages
+    |
+    */
+
+    'alpha_spaces' => 'The :attribute may only contain letters and spaces.',
+    
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines

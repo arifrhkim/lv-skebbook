@@ -37,8 +37,27 @@ class User extends Authenticatable
         $this->save();
     }
 
+    /**
+     * Get the social account record associated with the user.
+     */
     public function socialProviders()
     {
         return $this->hasMany('App\SocialProvider');
+    }
+
+    /**
+     * Get the profile record associated with the user.
+     */
+    public function profile()
+    {
+        return $this->hasOne('App\Profile');
+    }
+
+    /**
+     * Get the profile record associated with the user.
+     */
+    public function shop()
+    {
+        return $this->hasOne('App\Shop');
     }
 }

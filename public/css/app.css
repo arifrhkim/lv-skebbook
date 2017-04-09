@@ -10969,6 +10969,58 @@ body {
   }
 }
 
+.panel-background {
+  max-height: 130px;
+  overflow: hidden;
+}
+
+.img-avatar-lg {
+  max-width: 100px;
+  width: 100px;
+  position: absolute;
+  top: 15px;
+}
+
+.table-clean tbody tr td {
+  border-top: 0;
+}
+
+.table-product-details {
+  margin-bottom: 3em;
+}
+
+.table-product-details tbody tr td {
+  padding: 0;
+}
+
+.table-divided tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.table-divided tbody tr:last-child {
+  border-bottom: 0;
+}
+
+.product-image-list {
+  display: block;
+}
+
+.product-image-list .image-list {
+  max-height: 90px;
+  display: inline;
+  margin-right: 10px;
+}
+
+.info-box {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.tab-pane {
+  margin: 10px;
+}
+
 .alert-hover {
   position: fixed;
   top: 50px;
