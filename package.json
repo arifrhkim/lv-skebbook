@@ -3,7 +3,7 @@
   "scripts": {
     "prod": "gulp --production",
     "dev": "gulp watch",
-    "postinstall": "gulp --production"
+    "postinstall": "npm install && gulp --production"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
