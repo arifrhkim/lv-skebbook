@@ -69,11 +69,11 @@ return [
             'password' => env('FTP_PASSWORD'),
 
             // Optional FTP Settings...
-            'port'     => 21,
-            'root'     => '',
-            'passive'  => true,
-            'ssl'      => true,
-            'timeout'  => 30,
+            // 'port'     => 21,
+            // 'root'     => '',
+            // 'passive'  => true,
+            // 'ssl'      => true,
+            // 'timeout'  => 30,
         ],
 
     ],
