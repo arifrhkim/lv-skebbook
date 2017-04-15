@@ -10,7 +10,7 @@ $search-box-width: 600px;
 	  	
 		.form-control {
 	  		width: ($search-box-width * 7)/10;
-	  		border-radius: $border-rounded;
+	  		border-radius: $border-rounded-md;
 	  		padding: $padding-base-vertical ($padding-base-horizontal + 10px);
 	  	}
 	}

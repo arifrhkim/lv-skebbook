@@ -65,3 +65,8 @@ Route::get('emailverification', function() {
 Route::get('wip', function() {
 	return view('pages.test.work-in-progress');
 });
+Route::get('ftp', function() {
+	$upload = \Illuminate\Support\Facades\Storage::get('public/avatar.jpg');
+	echo "<img src='$upload'></img>";
+	
+});

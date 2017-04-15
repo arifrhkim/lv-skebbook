@@ -117,34 +117,15 @@
 <section id="popular-product" class="container-fluid container-addon">
 	<div class="row">
 		<div class="col-sm-12"><h2>Buku Populer</h2><hr></div>
+		@for ($i=0; $i<4; $i++)
 		<div class="col-sm-3 col-xs-12">
 			<div class="book">
 				<img src="{{ asset('images/web/buku.png') }}" class="img-responsive book-image">
-				<h3 class="book-title">Novel Drama</h3>
-				<p class="book-price">Rp 35.000,-</p>
+				<h3 class="book-title ellipsis">Novel Drama</h3>
+				<p class="book-price ellipsis">Rp 35.000,-</p>
 			</div>
 		</div>
-		<div class="col-sm-3 col-xs-12">
-			<div class="book">
-				<img src="{{ asset('images/web/buku.png') }}" class="img-responsive book-image">
-				<h3 class="book-title">Novel Drama</h3>
-				<p class="book-price">Rp 35.000,-</p>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12">
-			<div class="book">
-				<img src="{{ asset('images/web/buku.png') }}" class="img-responsive book-image">
-				<h3 class="book-title">Novel Drama</h3>
-				<p class="book-price">Rp 35.000,-</p>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12">
-			<div class="book">
-				<img src="{{ asset('images/web/buku.png') }}" class="img-responsive book-image">
-				<h3 class="book-title">Novel Drama</h3>
-				<p class="book-price">Rp 35.000,-</p>
-			</div>
-		</div>
+		@endfor
 	</div>
 </section>
 

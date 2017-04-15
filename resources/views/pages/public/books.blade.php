@@ -10,7 +10,7 @@
                     <div class="product-box">
         				<img class="img-responsive" src="{{ Storage::url($product->productImages[0]->name) }}"></img>
                         <div class="product-info">
-                            <h4 title="{{ $product->name }}">{{ str_limit($product->name, 10) }}</h4>
+                            <h4 class="ellipsis" title="{{ $product->name }}">{{ $product->name }}</h4>
                             <p>Rp {{ $product->price }}</p>    
                         </div>
                     </div>

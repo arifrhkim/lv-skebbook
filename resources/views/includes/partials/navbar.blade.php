@@ -22,7 +22,7 @@
             <!-- Center Side Of Navbar -->
             <form class="navbar-form" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="@lang('actions.search')">
+                    {{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => trans('actions.search')]) }}
                 </div>
             </form>
 

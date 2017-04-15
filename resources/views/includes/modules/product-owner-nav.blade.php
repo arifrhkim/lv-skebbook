@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-md-4">
-		<img src="{{ Storage::url($product->shop->photo) }}" class="img-responsive img-circle">
+		<img src="{{ $product->shop->photo ? Storage::url($product->shop->photo) : url('images/default/shop.png') }}" class="img-responsive img-circle" alt="{{ $product->shop->name }}">
 	</div>
 	<div class="col-md-8">
 		{{ $product->shop->name }} <br>

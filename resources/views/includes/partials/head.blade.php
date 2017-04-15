@@ -7,9 +7,9 @@
 
 <title>
     @hasSection('title')
-        @yield('title') - {{ config('app.name', 'Skebbook') }}
+        @yield('title') - {{ config('app.name') }}
     @else
-        {{ config('app.name', 'Skebbook') }}
+        {{ config('app.name') }}
     @endif
 </title>
 

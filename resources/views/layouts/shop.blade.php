@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
 <head>
-    @include('includes.head')
+    @include('includes.partials.head')
 </head>
 <body>
     <div id="app">
-        @include('includes.header')
+        @include('includes.partials.navbar')
 
-        <!-- Carousel -->
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="{{ asset('images/web/slide-image.jpg') }}" class="img-responsive">
-				</div>
-				<div class="item">
-					<img src="{{ asset('images/web/slide-image.jpg') }}" class="img-responsive">
-				</div>
-			</div>
+        <!-- Title -->
+		<div class="page-title text-center">
+			<h1>Skebbook Store</h1>
 		</div>
-		<!-- End of Carousel -->
+		<!-- End of Title -->
 
 		<!-- Breadcrumbs -->
 		<div class="breadcrumbs container-fluid">
@@ -28,7 +20,7 @@
 		<!-- End of Breadcrumbs -->
 
 		<!-- Energy -->
-		<div class="energy container-fluid">
+		<div class="energy container-fluid container-addon">
 			<h4>Energy untuk kamu</h4>
 			<div class="row">
 				@for ($i = 0; $i < 4; $i++)
@@ -40,7 +32,7 @@
 		</div>
 		<!-- End of Energy -->
 
-        <div class="container-fluid content">
+        <div class="container-fluid container-addon content">
         	<div class="row">
 	    		<div class="col-md-3">@include('includes.modules.shop-sidebar')</div>
 	    		<div class="col-md-9">@yield('content')</div>
@@ -49,6 +41,6 @@
         
     </div>
 
-    @include('includes.footer')
+    @include('includes.partials.footer')
 </body>
 </html>

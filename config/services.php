@@ -36,14 +36,14 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => '1260412474029087',
-        'client_secret' => '56edd46a37427cd2596847e44e2ac712',
+        'client_id' => env('SOCIALITE_FACEBOOK_CLIENT'),
+        'client_secret' => env('SOCIALITE_FACEBOOK_SECRET'),
         'redirect' => env('SOCIALITE_FACEBOOK_REDIRECT'),
     ],
 
     'google' => [
-        'client_id' => '1062991789206-oe5moitreec8aoeoa5pse5gffthogc5l.apps.googleusercontent.com',
-        'client_secret' => 'X7cdPvOeIrogZP6TqTwkd-4u',
+        'client_id' => env('SOCIALITE_GOOGLE_CLIENT'),
+        'client_secret' => env('SOCIALITE_GOOGLE_SECRET'),
         'redirect' => env('SOCIALITE_GOOGLE_REDIRECT'),
     ],
 

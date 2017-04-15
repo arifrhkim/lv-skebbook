@@ -10745,6 +10745,34 @@ body {
   background-size: cover;
 }
 
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.page-error {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.page-title {
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.breadcrumbs {
+  padding: 20px 35px;
+  background: #f1f5f8;
+}
+
+.energy {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .auth-upper-text {
   color: #fff;
   padding: 5% 0;
@@ -10902,18 +10930,12 @@ body {
 #popular-product .book-title {
   padding: 0 10px;
   margin-bottom: 5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 #popular-product .book-price {
   padding: 0 10px;
   color: #3498db;
   font-size: 14pt;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 #loops {
@@ -11039,7 +11061,7 @@ body {
   }
   .navbar-form .form-control {
     width: 420px;
-    border-radius: 50px;
+    border-radius: 0.8em;
     padding: 6px 22px;
   }
   .navbar-brand {

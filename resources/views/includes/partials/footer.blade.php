@@ -18,12 +18,11 @@
 					<div class="col-md-6 col-sm-12">
 						<h4 class="col-md-5 text-center">FOLLOW US</h4>
 						<ul class="social-list col-md-7 text-center">
-							<li><a href="{{ url('/') }}"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
-							<li><a href="{{ url('/') }}"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></li>
-							<li><a href="{{ url('/') }}"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-							<li><a href="{{ url('/') }}"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></li>
-							<li><a href="{{ url('/') }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-							<li><a href="{{ url('/') }}"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://facebook.com/skebbook"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://plus.google.com/116070574852522142723"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/skebbookcom/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com/skebbook"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UC8gBnW73CUs11NrX6nDhZMQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>

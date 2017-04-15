@@ -4,7 +4,7 @@
 
 			<div class="form-group">
 				{{ Form::label('q', trans('forms.search')) }}
-				{{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => trans('forms.search')]) }}
+				{{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => trans('actions.search')]) }}
 			</div>
 
 			<div class="form-group">

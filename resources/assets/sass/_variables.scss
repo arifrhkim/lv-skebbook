@@ -8,6 +8,8 @@ $list-group-border: $laravel-border-color;
 $navbar-default-border: $laravel-border-color;
 $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
+$border-rounded: 50px;
+$border-rounded-md: .8em;
 
 // Brands
 $brand-primary: #2980b9;
@@ -47,9 +49,6 @@ $grid-gutter-width: 30px;
 
 // Navbar
 $navbar-padding-horizontal: 15px;
-
-// Border
-$border-rounded: 50px;
 
 // Content Block
 $featured-base-height: 35em; 
