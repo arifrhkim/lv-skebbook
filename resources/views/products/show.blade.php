@@ -11,10 +11,14 @@
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-md-5">
-							<img src="{{ Storage::url($product->productimages[0]->name) }}" class="img-responsive">
+							{{-- <img src="{{ Storage::url($product->productimages[0]->name) }}" class="img-responsive"> --}}
+							<img src="{{ Cloudder::show($product->productimages[0]->name, ['quality' => 'auto', 'fetch_format' => 'auto', 'width' => 300, 'height' => 300]) }}" class="img-responsive" alt="{{ $product->name }}">
 							<div class="row" style="margin-top: 20px;">
 								@for ($i = 1; $i < count($product->productimages); $i++)
-								<div class="col-md-4"><img src="{{ Storage::url($product->productimages[$i]->name) }}" class="img-responsive"></div>
+								<div class="col-md-4">
+									{{-- <img src="{{ Storage::url($product->productimages[$i]->name) }}" class="img-responsive"> --}}
+									<img src="{{ Cloudder::show($product->productimages[$i]->name, ['quality' => 'auto', 'fetch_format' => 'auto']) }}" class="img-responsive" alt="{{ $product->name }}">
+								</div>
 								@endfor
 							</div>
 						</div>

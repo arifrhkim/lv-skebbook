@@ -65,8 +65,15 @@ Route::get('emailverification', function() {
 Route::get('wip', function() {
 	return view('pages.test.work-in-progress');
 });
-Route::get('ftp', function() {
-	$upload = \Illuminate\Support\Facades\Storage::get('public/avatar.jpg');
-	echo "<img src='$upload'></img>";
-	
+Route::get('upload', function() {
+	return view('pages.test.cloudinary');
 });
+Route::post('upload', function(\Illuminate\Http\Request $request) {
+	$files = $request->file('avatar');
+	foreach ($files as $file) {
+		Cloudder::upload($file, null, ['folder' => 'product/photos/'], null);
+		$publicId = Cloudder::getPublicId(); 
+		echo $publicId . "<br>";
+		echo Cloudder::show($publicId, []) . "<br>";
+	}
+})->name('upload');

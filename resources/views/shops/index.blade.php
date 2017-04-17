@@ -18,6 +18,7 @@
 							<ul class="nav nav-tabs" role="tablist">
 								<li role="presentation" class="active"><a href="#shop" aria-controls="shop" role="tab" data-toggle="tab">Shop</a></li>
 								<li role="presentation"><a href="#product" aria-controls="product" role="tab" data-toggle="tab">Books</a></li>
+								<a href="{{ route('product.create') }}" class="btn btn-primary btn-sm pull-right">@lang('actions.add_product')</a>
 							</ul>
 
 							<!-- Tab panes -->
@@ -75,7 +76,10 @@
 									<table class="table table-clean table-striped table-divided no-margin-btm" id="products">
 				                    	@foreach ($shop->products as $product)
 				                        <tr class="item{{$product->slug}}">
-				                        	<td class="col-md-1"><img src="{{ Storage::url($product->productimages[0]->name) }}" class="img-responsive"></td>
+				                        	<td class="col-md-1">
+				                        		{{-- <img src="{{ Storage::url($product->productimages[0]->name) }}" class="img-responsive"> --}}
+				                        		<img src="{{ Cloudder::show($product->productimages[0]->name, ['quality' => 'auto', 'fetch_format' => 'auto', 'width' => 100, 'height' => 100]) }}" class="img-responsive" alt="{{ $product->name }}">
+				                        	</td>
 				                            <td class="col-md-8">
 				                            	<a href="{{ route('product.show', ['slug' => $product->slug]) }}">{{ $product->name }}</a> <span class="label {{ $product->condition == 'Baru' ? 'label-primary' : 'label-success' }}">{{ $product->condition }}</span><br>
 				                            	<span class="text-muted"><small>

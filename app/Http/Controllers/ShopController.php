@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Shop;
+use Cloudder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -160,13 +161,29 @@ class ShopController extends Controller
 
             //Save to database
             if ($photo) {
-                $photo_path = $photo->store('public/images/shop/photo');
-                $shop->photo = $photo_path;
+                # Using local storage
+                // $photo_path = $photo->store('public/images/shop/photo');
+                // $shop->photo = $photo_path;
+
+                # Using CDN
+                Cloudder::upload($photo, null, [
+                    'folder' => 'shop/photo/',
+                    'tags' => 'photo'
+                ], null);
+                $shop->photo = Cloudder::getPublicId();
                 $shop->save();
             }
             if ($banner) {
-                $banner_path = $banner->store('public/images/shop/banner');
-                $shop->banner = $banner_path;
+                # Using local storage
+                // $banner_path = $banner->store('public/images/shop/banner');
+                // $shop->banner = $banner_path;
+                
+                # Using CDN
+                Cloudder::upload($banner, null, [
+                    'folder' => 'shop/banner/',
+                    'tags' => 'banner'
+                ], null);
+                $shop->banner = Cloudder::getPublicId();
                 $shop->save();    
             }
         } catch (Exception $e) {

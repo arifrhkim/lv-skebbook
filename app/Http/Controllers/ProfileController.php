@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Profile;
+use Cloudder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -216,14 +217,30 @@ class ProfileController extends Controller
 
             //Save to database
             if ($avatar) {
-                $avatar_path = $avatar->store('public/images/profile/avatar');
-                $profile->avatar = $avatar_path;
+                # Using local storage
+                //$avatar_path = $avatar->store('public/images/profile/avatar');
+                //$profile->avatar = $avatar_path;
+                
+                # Using CDN
+                Cloudder::upload($avatar, null, [
+                    'folder' => 'profile/avatar/',
+                    'tags' => 'avatar'
+                ], null);
+                $profile->avatar = Cloudder::getPublicId();
                 $profile->save();
             }
             if ($banner) {
-                $banner_path = $banner->store('public/images/profile/banner');
-                $profile->banner = $banner_path;
-                $profile->save();    
+                # Using local storage
+                // $banner_path = $banner->store('public/images/profile/banner');
+                // $profile->banner = $banner_path;
+                
+                # Using CDN
+                Cloudder::upload($banner, null, [
+                    'folder' => 'profile/banner/',
+                    'tags' => 'banner'
+                ], null);
+                $profile->banner = Cloudder::getPublicId();
+                $profile->save();
             }
         } catch (Exception $e) {
             return abort(500);

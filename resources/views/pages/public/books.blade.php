@@ -8,7 +8,8 @@
             <div class="col-sm-3 col-xs-6">
     			<a href="{{ route('product.show', ['slug' => $product->slug]) }}" class="product-link">
                     <div class="product-box">
-        				<img class="img-responsive" src="{{ Storage::url($product->productImages[0]->name) }}"></img>
+        				{{-- <img class="img-responsive" src="{{ Storage::url($product->productImages[0]->name) }}"></img> --}}
+                        <img src="{{ Cloudder::show($product->productimages[0]->name, ['quality' => 'auto', 'fetch_format' => 'auto', 'width' => 300, 'height' => 300]) }}" class="img-responsive" alt="{{ $product->name }}">
                         <div class="product-info">
                             <h4 class="ellipsis" title="{{ $product->name }}">{{ $product->name }}</h4>
                             <p>Rp {{ $product->price }}</p>    

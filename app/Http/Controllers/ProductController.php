@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\ProductImage;
 use App\Shop;
+use Cloudder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -83,8 +84,16 @@ class ProductController extends Controller
             //Save to database
             if ($input_images) {
                 foreach ($input_images as $image) {
-                    $productimages_path = $image->store('public/images/product/photos');
-                    $productimages = new ProductImage(['name' => $productimages_path]);
+                    # Using local storage
+                    // $productimages_path = $image->store('public/images/product/photos');
+                    // $productimages = new ProductImage(['name' => $productimages_path]);
+
+                    # Using CDN
+                    Cloudder::upload($image, null, [
+                        'folder' => 'product/photos/',
+                        'tags' => 'product'
+                    ], null);
+                    $productimages = new ProductImage(['name' => Cloudder::getPublicId()]);
                     $product->productimages()->save($productimages);
                 }    
             }
@@ -107,7 +116,7 @@ class ProductController extends Controller
     public function show($slug)
     {
         $product = Product::where('slug', $slug)->firstOrFail();
-        //dd($product);
+        
         return view('products.show', [
             'product' => $product
         ]);

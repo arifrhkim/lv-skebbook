@@ -20,11 +20,12 @@
             <!-- Left Side Of Navbar -->
 
             <!-- Center Side Of Navbar -->
-            <form class="navbar-form" role="search">
+            {!! Form::open(['url' => 'books', 'method' => 'GET', 'class' => 'navbar-form', 'role' => 'search']) !!}
                 <div class="form-group">
                     {{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => trans('actions.search')]) }}
                 </div>
-            </form>
+            {!! Form::close() !!}
+            
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
