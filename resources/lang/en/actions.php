@@ -23,6 +23,7 @@ return [
     'add_product' => 'Add Book',
     'manage_product' => 'Manage Book',
     'buy' => 'Buy',
-    'filter' => 'Filter'
+    'filter' => 'Filter',
+    'manage' => 'Manage',
 
 ];

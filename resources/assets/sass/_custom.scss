@@ -94,6 +94,46 @@ body {
 	#content {
 		margin-right: $grid-gutter-width/2;
 	}	
+
+	#pengetahuan {
+		background: url('../images/web/inbound.png'); 
+		background-size: cover; 
+		height: 250px; 
+		border-right: solid 10px $body-bg; 
+		color:white; 
+		padding-top:50px;
+	}
+
+	#upload {
+		background: url('../images/web/upload.png'); 
+		background-size: cover; 
+		background-position:center; 
+		height: 250px; 
+		border-left: solid 10px $body-bg; 
+		border-right: solid 10px $body-bg;
+		text-align: center; 
+		color: white;
+		padding-top: 7%;
+	}
+
+	#pembayaran {
+		background: url('../images/web/status-bayar.png'); 
+		background-size: cover; 
+		background-position:center; 
+		height: 114px; 
+		border-left: solid 10px $body-bg;  
+		padding-top:40px;
+	}
+
+	#order {
+		background: url('../images/web/order.png'); 
+		background-size: cover; 
+		height: 114px; 
+		text-align:center; 
+		border-left: solid 10px $body-bg;  
+		padding-top:20px;
+		color: #fff;
+	}
 }
 
 // Landing Page

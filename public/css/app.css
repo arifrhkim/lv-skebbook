@@ -10823,6 +10823,46 @@ body {
   margin-right: 15px;
 }
 
+#dashboard #pengetahuan {
+  background: url("../images/web/inbound.png");
+  background-size: cover;
+  height: 250px;
+  border-right: solid 10px #f5f8fa;
+  color: white;
+  padding-top: 50px;
+}
+
+#dashboard #upload {
+  background: url("../images/web/upload.png");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-left: solid 10px #f5f8fa;
+  border-right: solid 10px #f5f8fa;
+  text-align: center;
+  color: white;
+  padding-top: 7%;
+}
+
+#dashboard #pembayaran {
+  background: url("../images/web/status-bayar.png");
+  background-size: cover;
+  background-position: center;
+  height: 114px;
+  border-left: solid 10px #f5f8fa;
+  padding-top: 40px;
+}
+
+#dashboard #order {
+  background: url("../images/web/order.png");
+  background-size: cover;
+  height: 114px;
+  text-align: center;
+  border-left: solid 10px #f5f8fa;
+  padding-top: 20px;
+  color: #fff;
+}
+
 #featured-content {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -11254,6 +11294,10 @@ body {
   margin-right: 20px;
 }
 
+.row-compact {
+  padding: 0 15px;
+}
+
 .list-group {
   list-style: none;
   margin: 30px 0;
@@ -11271,6 +11315,17 @@ body {
 .list-group .divider {
   border-top: 1px dotted rgba(245, 248, 250, 0.5);
   margin: 10px 0;
+}
+
+.well-danger {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.well-compact {
+  padding: 7px 10px 5px 10px;
+  line-height: 2.5;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -20,6 +20,7 @@ return [
     'profile' => 'Profile',
     'user' => 'User',
     'dashboard' => 'Dashboard',
+    'shop' => 'Shop',
 
 
     /**

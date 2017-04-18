@@ -15,6 +15,10 @@ require('./bootstrap');
 
 Vue.component('example', require('./components/Example.vue'));
 
+Vue.config.devtools = false;
+Vue.config.debug = false;
+Vue.config.silent = true;
+
 const app = new Vue({
     el: '#app'
 });
