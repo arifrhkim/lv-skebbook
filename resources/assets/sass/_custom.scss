@@ -137,6 +137,23 @@ body {
 }
 
 // Landing Page
+
+#featured-search {
+	margin: 0 15%;
+	
+	.panel {
+		position: relative;
+		top: -35px;
+		width: 100%;
+	}
+
+	.form-control {
+		width: 100%;
+		border: 0;
+		box-shadow: none;
+	}
+} 
+
 #featured-content {
 	margin-top: $grid-gutter-width;
 	margin-bottom: $grid-gutter-width;

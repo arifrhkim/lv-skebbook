@@ -3,7 +3,7 @@
 @section('content')
 
 <section id="featured-slider">
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	{{-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -66,7 +66,74 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
+	</div> --}}
+	<a href="#"><img src="{{ url('images/web/Background.jpg') }}"></a>
+</section>
+
+<section id="featured-search">
+	<div class="panel panel-default">
+		<div class="panel-body">
+
+			{!! Form::open(['url' => 'books', 'method' => 'GET', 'class' => 'form-inline', 'role' => 'search']) !!}
+
+                <div class="form-group col-md-10">
+                    {{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => 'Cari judul buku, genre, penerbit atau penulis disini']) }}
+                </div>
+
+                <button type="submit" class="btn btn-danger col-md-2">Cari Buku</button>
+
+            {!! Form::close() !!}
+
+		</div>
 	</div>
+</section>
+
+<section id="featured-category" class="container-fluid container-addon">
+
+		<div class="row">
+			<div class="col-md-2 col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						Kuliner & travel
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						Buku anak anak
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						Majalah & Tabloid
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						Seni & Fotografi
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						Bisnis & Manajemen
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						Biografi & sejarah
+					</div>
+				</div>
+			</div>
+		</div>
 </section>
 
 <section id="featured-content" class="container-fluid container-addon">

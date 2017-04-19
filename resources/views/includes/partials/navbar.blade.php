@@ -20,13 +20,13 @@
             <!-- Left Side Of Navbar -->
 
             <!-- Center Side Of Navbar -->
-            {!! Form::open(['url' => 'books', 'method' => 'GET', 'class' => 'navbar-form', 'role' => 'search']) !!}
-                <div class="form-group">
-                    {{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => trans('actions.search')]) }}
-                </div>
-            {!! Form::close() !!}
-            
-
+            @if (Route::currentRouteName() != 'pages.welcome')
+	            {!! Form::open(['url' => 'books', 'method' => 'GET', 'id' => 'navbar-search', 'class' => 'navbar-form', 'role' => 'search']) !!}
+	                <div class="form-group">
+	                    {{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => trans('actions.search')]) }}
+	                </div>
+	            {!! Form::close() !!}
+            @endif
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->

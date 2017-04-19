@@ -13,6 +13,20 @@ return [
     |
     */
 
-    'search' => 'Search...',
+    'create' => 'Buat',
+    'search' => 'Cari...',
+    'edit' => 'Ubah',
+    'delete' => 'Hapus',
+    'view' => 'Lihat',
+    'save' => 'Simpan',
+    'cancel' => 'Batal',
+    'add_product' => 'Tambah Buku',
+    'manage_product' => 'Kelola Buku',
+    'buy' => 'Beli',
+    'filter' => 'Filter',
+    'manage' => 'Kelola',
+    'open-shop' => 'Buka Toko Buku',
+    'login' => 'Masuk',
+    'register' => 'Daftar',
 
 ];

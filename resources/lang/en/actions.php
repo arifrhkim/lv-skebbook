@@ -25,5 +25,8 @@ return [
     'buy' => 'Buy',
     'filter' => 'Filter',
     'manage' => 'Manage',
+    'open-shop' => 'Open Shop',
+    'login' => 'Login',
+    'register' => 'Register',
 
 ];

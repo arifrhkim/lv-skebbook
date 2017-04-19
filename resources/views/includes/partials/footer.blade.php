@@ -10,7 +10,7 @@
 							<div class="input-group">
 								<input type="text" class="form-control" placeholder="Enter your email address" id="subscribe">
 								<span class="input-group-btn">
-									<button class="btn btn-info input-rounded" type="button">Subscribe</button>
+									<button class="btn btn-danger input-rounded" type="button">Subscribe</button>
 								</span>
 							</div>
 						</form>
