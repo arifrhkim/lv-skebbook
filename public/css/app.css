@@ -10862,14 +10862,30 @@ body {
 }
 
 #featured-category {
-  margin-top: -30px;
-  margin-bottom: -30px;
+  margin-top: -60px;
+}
+
+#featured-category table {
+  background-color: white;
+}
+
+#featured-category table a {
+  color: grey;
+  margin-left: 15px;
+}
+
+#featured-category table i {
+  color: #de5141;
+  margin-right: 15px;
 }
 
 #featured-content {
-  margin-top: 30px;
-  margin-bottom: 30px;
   color: #fff;
+}
+
+#featured-content h4 {
+  color: #636B6F;
+  margin-bottom: -15px;
 }
 
 #featured-content #sejarah {

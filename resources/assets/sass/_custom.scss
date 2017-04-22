@@ -155,14 +155,31 @@ body {
 }
 
 #featured-category {
-	margin-top: -30px;
-	margin-bottom: -30px;
+	margin-top: -$grid-gutter-width*2;
+
+	table {
+		background-color: white;
+
+		a {
+			color: grey;
+			margin-left: $grid-gutter-width/2;
+		}
+
+		i {
+			color: #de5141;
+			margin-right: $grid-gutter-width/2;
+		}
+	}
+
 }
 
 #featured-content {
-	margin-top: $grid-gutter-width;
-	margin-bottom: $grid-gutter-width;
 	color: #fff;
+
+	h4 {
+		color: #636B6F;
+		margin-bottom: -$grid-gutter-width/2;
+	}
 
 	#sejarah {
 		height: $featured-base-height;

@@ -24,7 +24,45 @@
 	</div>
 </section>
 
-<section id="featured-category" class="container-fluid container-addon">
+<section id="featured-category">
+	<div class="container">
+		<h4>Kategori</h4>
+		<table class="table table-bordered">
+  		<tr>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-camera-retro fa-lg" aria-hidden="true"></i> Art & Photography </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-address-book-o fa-lg" aria-hidden="true"></i> Biographies & Memoirs </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-building fa-lg" aria-hidden="true"></i> Business </a></td>
+			</tr>
+  		<tr>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-child fa-lg" aria-hidden="true"></i> Children's Book </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Comic Literature </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-birthday-cake fa-lg" aria-hidden="true"></i> Cooking & Food </a></td>
+			</tr>
+  		<tr>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-bed fa-lg" aria-hidden="true"></i> Design, Interior & Home </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i> Entertainment & Humor </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-eye fa-lg" aria-hidden="true"></i> Fiction Literature </a></td>
+			</tr>
+  		<tr>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-user-md fa-lg" aria-hidden="true"></i> Health, body & Fitness </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-history fa-lg" aria-hidden="true"></i> History </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-paperclip fa-lg" aria-hidden="true"></i> Law </a></td>
+			</tr>
+  		<tr>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-heart fa-lg" aria-hidden="true"></i> Parenting & Relationship </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-refresh fa-lg" aria-hidden="true"></i> Reference </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-compress fa-lg" aria-hidden="true"></i> Religion </a></td>
+			</tr>
+  		<tr>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-globe fa-lg" aria-hidden="true"></i> Travel </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-futbol-o fa-lg" aria-hidden="true"></i> Sport & Outdoors </a></td>
+				<td class="col-sm-4"><a href="#"><i class="fa fa-globe fa-lg" aria-hidden="true"></i> Science & Technology </a></td>
+			</tr>
+    </table>
+	</div>
+</section>
+
+<!-- <section id="featured-category" class="container-fluid container-addon">
 	<div class="row">
 			<div class="col-sm-3 col-xs-12">
 			    <div class="book">
@@ -55,9 +93,10 @@
 				</div>
 			</div>
 		</div>
-</section>
+</section> -->
 
 <section id="featured-content" class="container-fluid container-addon">
+	<h4>Fitur Skeb Book</h4>
 	<div class="row">
 		<div class="col-md-4">
 			<div id="sejarah">
@@ -191,84 +230,84 @@
             </div>
         </div>
     </div>
-</div>
+	</div>
 </section>
 
 <section id="product-newest" class="">
-<div class="container">
-    <!-- Terbaru -->
-<div class="page-header">
-	<h3>Buku Terbaru
-		<div class="pull-right">
+	<div class="container">
+	    <!-- Terbaru -->
+	<div class="page-header">
+		<h3>Buku Terbaru
+			<div class="pull-right">
 
-			<!-- Left and right controls -->
-			<a class="btn btn-danger btn-rounded" href="#newestCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			</a>
-			<a class="btn btn-danger btn-rounded" href="#newestCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			</a>
+				<!-- Left and right controls -->
+				<a class="btn btn-danger btn-rounded" href="#newestCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				</a>
+				<a class="btn btn-danger btn-rounded" href="#newestCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</a>
 
-		</div>
-	</h3>
-</div>
-
-<div id="newestCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-
-			<div class="row">
-			    @for ($i=0; $i<4; $i++)
-    			  <div class="col-sm-6 col-md-3">
-    			    <div class="thumbnail">
-    						<a href="detail.html">
-    			      	<img class="img-responsive" src="{{ asset('images/web/buku.png') }}" alt="buku1">
-    						</a>
-    			    	<div class="caption">
-    							<h5 id="judul">
-    								Book Number 1
-    								<div id="hearts" class="starrr pull-right"></div>
-    							</h5>
-    							<a href="detail.html">
-    				    		<h4>Novel Drama</h4>
-    							</a>
-    				    	<h4 id="harga">Rp. 35.000,-</h4>
-    			    	</div>
-    			    </div>
-    			   </div>
-    			  @endfor
 			</div>
-    </div>
-
-    <div class="item">
-
-			<div class="row">
-
-			  @for ($i=0; $i<4; $i++)
-    			  <div class="col-sm-6 col-md-3">
-    			    <div class="thumbnail">
-    						<a href="detail.html">
-    			      	<img class="img-responsive" src="{{ asset('images/web/buku.png') }}" alt="buku1">
-    						</a>
-    			    	<div class="caption">
-    							<h5 id="judul">
-    								Book Number 1
-    								<div id="hearts" class="starrr pull-right"></div>
-    							</h5>
-    							<a href="detail.html">
-    				    		<h4>Novel Drama</h4>
-    							</a>
-    				    	<h4 id="harga">Rp. 35.000,-</h4>
-    			    	</div>
-    			    </div>
-    			   </div>
-    			  @endfor
-					</div>
-		    </div>
-		  </div>
-		</div>
+		</h3>
 	</div>
+
+	<div id="newestCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+
+				<div class="row">
+				    @for ($i=0; $i<4; $i++)
+	    			  <div class="col-sm-6 col-md-3">
+	    			    <div class="thumbnail">
+	    						<a href="detail.html">
+	    			      	<img class="img-responsive" src="{{ asset('images/web/buku.png') }}" alt="buku1">
+	    						</a>
+	    			    	<div class="caption">
+	    							<h5 id="judul">
+	    								Book Number 1
+	    								<div id="hearts" class="starrr pull-right"></div>
+	    							</h5>
+	    							<a href="detail.html">
+	    				    		<h4>Novel Drama</h4>
+	    							</a>
+	    				    	<h4 id="harga">Rp. 35.000,-</h4>
+	    			    	</div>
+	    			    </div>
+	    			   </div>
+	    			  @endfor
+				</div>
+	    </div>
+
+	    <div class="item">
+
+				<div class="row">
+
+				  @for ($i=0; $i<4; $i++)
+	    			  <div class="col-sm-6 col-md-3">
+	    			    <div class="thumbnail">
+	    						<a href="detail.html">
+	    			      	<img class="img-responsive" src="{{ asset('images/web/buku.png') }}" alt="buku1">
+	    						</a>
+	    			    	<div class="caption">
+	    							<h5 id="judul">
+	    								Book Number 1
+	    								<div id="hearts" class="starrr pull-right"></div>
+	    							</h5>
+	    							<a href="detail.html">
+	    				    		<h4>Novel Drama</h4>
+	    							</a>
+	    				    	<h4 id="harga">Rp. 35.000,-</h4>
+	    			    	</div>
+	    			    </div>
+	    			   </div>
+	    			  @endfor
+						</div>
+			    </div>
+			  </div>
+			</div>
+		</div>
 </section>
 
 <section id="loops">
