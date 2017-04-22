@@ -10888,14 +10888,14 @@ body {
   margin-bottom: -15px;
 }
 
-#featured-content #sejarah {
+#featured-content #feature-left {
   height: 35em;
   background: url("../images/web/picture-1.jpg");
   background-size: cover;
   padding: 0;
 }
 
-#featured-content #sejarah .img-container {
+#featured-content #feature-left .img-container {
   text-align: center;
   position: relative;
   top: 50%;
@@ -10904,14 +10904,14 @@ body {
   padding: 0 10%;
 }
 
-#featured-content #komik {
+#featured-content #feature-top {
   height: 17.5em;
   background: url("../images/web/picture-2.jpg");
   background-size: cover;
   border-bottom: 15px solid #f5f8fa;
 }
 
-#featured-content #komik .img-container {
+#featured-content #feature-top .img-container {
   position: relative;
   top: 50%;
   -webkit-transform: perspective(1px) translateY(-50%);
@@ -10921,19 +10921,19 @@ body {
 }
 
 @media (max-width: 768px) {
-  #featured-content #komik {
+  #featured-content #feature-top {
     border-bottom: 0;
   }
 }
 
-#featured-content #karya {
+#featured-content #feature-right {
   height: 17.5em;
   background: url("../images/web/picture-3.jpg");
   background-size: cover;
   border-bottom: 15px solid #f5f8fa;
 }
 
-#featured-content #karya .img-container {
+#featured-content #feature-right .img-container {
   position: relative;
   top: 50%;
   -webkit-transform: perspective(1px) translateY(-50%);
@@ -10943,19 +10943,19 @@ body {
 }
 
 @media (max-width: 768px) {
-  #featured-content #karya {
+  #featured-content #feature-right {
     border-bottom: 0;
   }
 }
 
-#featured-content #pengalaman {
+#featured-content #feature-bottom {
   height: 17.5em;
   background: url("../images/web/picture-4.jpg");
   background-size: cover;
   border-top: 15px solid #f5f8fa;
 }
 
-#featured-content #pengalaman .img-container {
+#featured-content #feature-bottom .img-container {
   position: relative;
   top: 30%;
   -webkit-transform: perspective(1px) translateY(-50%);
@@ -10965,7 +10965,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  #featured-content #pengalaman .img-container h1 {
+  #featured-content #feature-bottom .img-container h1 {
     font-size: 2em;
   }
 }

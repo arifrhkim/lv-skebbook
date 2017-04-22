@@ -62,44 +62,11 @@
 	</div>
 </section>
 
-<!-- <section id="featured-category" class="container-fluid container-addon">
-	<div class="row">
-			<div class="col-sm-3 col-xs-12">
-			    <div class="book">
-				    <a href="books">
-					    <img src="{{ asset('images/web/Block1.jpg') }}" class="img-responsive book-image">
-					</a>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="book">
-				    <a href="books">
-					    <img src="{{ asset('images/web/block2.jpg') }}" class="img-responsive book-image">
-					</a>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="book">
-				    <a href="books">
-					    <img src="{{ asset('images/web/block3.jpg') }}" class="img-responsive book-image">
-					</a>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="book">
-				    <a href="books">
-					    <img src="{{ asset('images/web/block4.jpg') }}" class="img-responsive book-image">
-					</a>
-				</div>
-			</div>
-		</div>
-</section> -->
-
 <section id="featured-content" class="container-fluid container-addon">
 	<h4>Fitur Skeb Book</h4>
 	<div class="row">
 		<div class="col-md-4">
-			<div id="sejarah">
+			<div id="feature-left">
 				<div class="img-container">
 					<h1>Tidak menemukan buku yang dicari?</h1>
 					<p>Biarkan ratusan penjual buku membantu, lelang pencarian buku sekarang.</p>
@@ -121,7 +88,7 @@
 		<div class="col-md-8">
 			<div class="row">
 				<div class="col-md-6">
-					<div id="komik">
+					<div id="feature-top">
 						<div class="img-container">
 							<h1>Tunjukan Karyamu</h1>
 							<p>Publikasi bukumu sendiri, dapatkan fans page untuk berinteraksi dan mengapresiasi kryamu.</p>
@@ -130,7 +97,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div id="karya">
+					<div id="feature-right">
 						<div class="img-container">
 							<h1>E-book dari penulis keren</h1>
 							<p>Koleksi dari buku e-book terbaru mulai dari penulis terkenal sampai penulis independen.</p>
@@ -139,7 +106,7 @@
 					</div>
 				</div>
 				<div class="col-md-12">
-					<div id="pengalaman">
+					<div id="feature-bottom">
 						<div class="img-container">
 							<h1>Langganan majalah favorite kamu.</h1>
 							<div class="form-group">
