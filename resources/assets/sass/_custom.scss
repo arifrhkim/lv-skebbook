@@ -164,7 +164,7 @@ body {
 	margin-bottom: $grid-gutter-width;
 	color: #fff;
 
-	#sejarah {
+	#feature-left {
 		height: $featured-base-height;
 		background: url('../images/web/picture-1.jpg');
 		background-size: cover;
@@ -179,7 +179,7 @@ body {
 		}
 	}
 
-	#komik {
+	#feature-top {
 		height: $featured-base-height/2;
 		background: url('../images/web/picture-2.jpg');
 		background-size: cover;
@@ -198,7 +198,7 @@ body {
 		}
 	}
 
-	#karya {
+	#feature-right {
 		height: $featured-base-height/2;
 		background: url('../images/web/picture-3.jpg');
 		background-size: cover;
@@ -217,7 +217,7 @@ body {
 		}
 	}
 
-	#pengalaman {
+	#feature-bottom {
 		height: $featured-base-height/2;
 		background: url('../images/web/picture-4.jpg');
 		background-size: cover;
