@@ -1,7 +1,7 @@
 @if (Auth::guest())
     <li><a href="{{ url('/login') }}">@lang('actions.login')</a></li>
     <a href="{{ url('/register') }}" class="btn btn-danger navbar-btn">@lang('actions.open-shop')</a>
-    <a href="#" class="btn btn-danger navbar-btn btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
+    <a href="{{ url('/charts') }}" class="btn btn-danger navbar-btn btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
 @else
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -15,7 +15,7 @@
             <!--li><a href="{{ url('product') }}">Book</a></li-->
 
             <li role="separator" class="divider"></li>
-            
+
             <li>
                 <a href="{{ url('/logout') }}"
                     onclick="event.preventDefault();

@@ -20,6 +20,11 @@ class PageController extends Controller
         return view('pages.public.landing-page');
     }
 
+    public function charts()
+    {
+        return view('pages.public.charts');
+    }
+
     public function books(Request $request)
     {
         $products = Product::where('status', 1)->paginate(16);
@@ -43,5 +48,5 @@ class PageController extends Controller
         ]);
     }
 
-    
+
 }

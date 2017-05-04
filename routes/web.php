@@ -14,6 +14,7 @@
 # Public Pages
 Route::get('/', 'PageController@welcome')->name('pages.welcome');
 Route::get('books', 'PageController@books')->name('pages.books');
+Route::get('charts', 'PageController@charts')->name('pages.charts');
 
 # Auth
 Auth::routes();
@@ -72,7 +73,7 @@ Route::post('upload', function(\Illuminate\Http\Request $request) {
 	$files = $request->file('avatar');
 	foreach ($files as $file) {
 		Cloudder::upload($file, null, ['folder' => 'product/photos/'], null);
-		$publicId = Cloudder::getPublicId(); 
+		$publicId = Cloudder::getPublicId();
 		echo $publicId . "<br>";
 		echo Cloudder::show($publicId, []) . "<br>";
 	}

@@ -1,6 +1,6 @@
 
 <footer class="app-footer">
-	
+
 		<section id="addon-footer">
 			<div class="container-fluid container-addon">
 				<div class="row">
@@ -32,13 +32,9 @@
 		<section id="main-footer">
 			<div class="container-fluid container-addon">
 				<div class="row">
-					<h2 class="footer-title">Skebbook</h2>
+					<br>
 					<div class="col-md-4 col-sm-12">
-						<article>
-							<p>Marketplace that enable people to discover the goodness of their books.</p>
-							<p>We allowed people to sell, buy and donate/lend the book easily like never before.</p>
-							<p>Our commitment is to building powerful accessable education accross Indonesia</p>
-						</article>
+						<img src="images/web/metode-pembayaran.png" alt="metode pembayaran">
 					</div>
 					<div class="col-md-2 col-sm-6">
 						<h3 class="footer-subtitle">@lang('titles.sell')</h3>
@@ -70,8 +66,8 @@
 				</div>
 			</div>
 		</section>
-		
-	
+
+
 </footer>
 
 <!-- Scripts -->
