@@ -11083,6 +11083,18 @@ body {
   margin: 10px;
 }
 
+#charts-page {
+  margin-top: 20px;
+}
+
+#charts-page .red-color {
+  color: #d9534f;
+}
+
+#charts-page .full-width {
+  width: 100%;
+}
+
 .alert-hover {
   position: fixed;
   top: 50px;

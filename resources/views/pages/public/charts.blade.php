@@ -2,18 +2,19 @@
 
 @section('content')
 
-<div class="container">
+<div class="container" id="charts-page">
 	<div class="row">
 		<div class="col-sm-8">
 
 			<section  id="shop-chart">
 
 				<div class="panel panel-default">
-				  <div class="panel-heading">
+
+					<div class="panel-heading">
 				    <h3 class="panel-title">Keranjang Belanja</h3>
 				  </div>
-				  <div class="panel-body">
 
+					<div class="panel-body">
 						<table class="table">
 							<thead>
 								<tr>
@@ -42,12 +43,12 @@
 								</tr>
 							</tbody>
 						</table>
-
 				  </div>
+
 				</div>
 
 				<div class="pull-right">
-					<p><strong>Sub Total Belanja (3 buku) <span style="color:#d9534f">Rp. 150.000</span></strong></p>
+					<p><strong>Sub Total Belanja (3 buku) <span class="red-color">Rp. 150.000</span></strong></p>
 				</div>
 
 			</section>
@@ -60,25 +61,17 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">Detail belanja</div>
 					<div class="panel-body">
-						<table style="width:100%">
+						<table class="full-width">
 							<tr>
 								<td>Buku populer</td>
-								<td style="text-align:right">Rp.100.000</td>
-							</tr>
-							<tr>
-								<td>Buku populer</td>
-								<td style="text-align:right">Rp.100.000</td>
-							</tr>
-							<tr>
-								<td>Buku populer</td>
-								<td style="text-align:right">Rp.100.000</td>
+								<td class="pull-right">Rp.100.000</td>
 							</tr>
 						</table>
 						<hr>
-						<table style="width:100%">
+						<table class="full-width">
 							<tr>
-								<td><strong>Buku populer</strong></td>
-								<td style="text-align:right">Rp.100.000</td>
+								<td><strong>Total Belanja</strong></td>
+								<td class="pull-right">Rp.100.000</td>
 							</tr>
 						</table>
 						<br>
@@ -109,14 +102,13 @@
 							<button class="btn btn-danger btn-block" type="button" name="button">Estimasi Ongkos Kirim</button>
 						</form>
 						<br>
-						<table style="width:100%">
+						<table class="full-width">
 							<tr>
 								<td><strong>Estimasi ongkos kirim</strong></td>
-								<td style="text-align:right"><strong>Rp.1.000</strong></td>
+								<td class="pull-right"><strong>Rp.100.000</strong></td>
 							</tr>
 						</table>
-				</div>
-
+					</div>
 				</div>
 
 			</section>

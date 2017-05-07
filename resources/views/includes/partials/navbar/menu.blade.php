@@ -3,6 +3,7 @@
     <a href="{{ url('/register') }}" class="btn btn-danger navbar-btn">@lang('actions.open-shop')</a>
     <a href="{{ url('/charts') }}" class="btn btn-danger navbar-btn btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
 @else
+    <a href="{{ url('/charts') }}" class="btn btn-danger navbar-btn btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             {{ Auth::user()->name }} <span class="caret"></span>
@@ -29,4 +30,5 @@
             </li>
         </ul>
     </li>
+
 @endif
