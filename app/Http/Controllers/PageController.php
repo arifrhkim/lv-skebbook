@@ -20,9 +20,9 @@ class PageController extends Controller
         return view('pages.public.landing-page');
     }
 
-    public function charts()
+    public function carts()
     {
-        return view('pages.public.charts');
+        return view('pages.public.carts');
     }
 
     public function books(Request $request)

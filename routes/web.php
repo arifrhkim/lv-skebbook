@@ -14,7 +14,7 @@
 # Public Pages
 Route::get('/', 'PageController@welcome')->name('pages.welcome');
 Route::get('books', 'PageController@books')->name('pages.books');
-Route::get('charts', 'PageController@charts')->name('pages.charts');
+Route::get('carts', 'PageController@carts')->name('pages.carts');
 
 # Auth
 Auth::routes();

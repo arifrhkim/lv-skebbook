@@ -33,7 +33,7 @@
 						<div class="row">
 							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center">
 								<h4>@lang('titles.profile')</h4>
-								<a href="{{ url('profile') }}" class="btn btn-danger btn-sm">@lang('actions.manage')</a>		
+								<a href="{{ url('profile') }}" class="btn btn-danger btn-sm">@lang('actions.manage')</a>
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 								@if (!Auth::user()->profile)
@@ -49,7 +49,7 @@
 						<div class="row">
 							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center">
 								<h4>@lang('titles.shop')</h4>
-								<a href="{{ url('shop') }}" class="btn btn-danger btn-sm">@lang('actions.manage')</a>		
+								<a href="{{ url('shop') }}" class="btn btn-danger btn-sm">@lang('actions.manage')</a>
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 								@if (!Auth::user()->shop)
@@ -100,7 +100,7 @@
 				<div class="row text-center" id="pembayaran">
 					<a href="#" class="btn btn-outline">Lihat status pembayaran</a>
 				</div>
-				
+
 				<br>
 
 				<div  class="row" id="order">

@@ -1,9 +1,20 @@
 @if (Auth::guest())
     <li><a href="{{ url('/login') }}">@lang('actions.login')</a></li>
-    <a href="{{ url('/register') }}" class="btn btn-danger navbar-btn">@lang('actions.open-shop')</a>
-    <a href="{{ url('/charts') }}" class="btn btn-danger navbar-btn btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
+    <li>
+      <p class="navbar-btn">
+        <a href="{{ url('/register') }}" class="btn btn-danger">@lang('actions.open-shop')</a>
+        <a href="{{ url('/carts') }}" class="btn btn-danger btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
+        <span class="badge badge-notify">7</span>
+      </p>
+    </li>
 @else
-    <a href="{{ url('/charts') }}" class="btn btn-danger navbar-btn btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
+    <li>
+      @if (!Auth::user()->profile)
+        <img src="{{ url('images/default/avatar.png') }}" class="img-responsive img-circle img-avatar" alt="{{ Auth::user()->name }}">
+      @else
+        <img src="{{ Auth::user()->profile->avatar ? Cloudder::show(Auth::user()->profile->avatar, ['quality' => 'auto', 'fetch_format' => 'auto']) : url('images/default/avatar.png') }}" class="img-circle img-responsive img-avatar" alt="">
+      @endif
+    </li>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             {{ Auth::user()->name }} <span class="caret"></span>
@@ -29,6 +40,12 @@
                 </form>
             </li>
         </ul>
+    </li>
+    <li>
+      <p class="navbar-btn">
+        <a href="{{ url('/carts') }}" class="btn btn-danger btn-rounded"><i class="fa fa-shopping-basket fa-btn-sm" aria-hidden="true"></i></a>
+        <span class="badge badge-notify">7</span>
+      </p>
     </li>
 
 @endif

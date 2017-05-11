@@ -19,9 +19,9 @@
 							<thead>
 								<tr>
 									<td class="col-md-1"></td>
-									<td class="col-md-7">Judul Buku</td>
+									<td class="col-md-6">Judul Buku</td>
 									<td class="col-md-2">Harga</td>
-									<td class="col-md-2">Jumlah</td>
+									<td class="col-md-3">Jumlah</td>
 								</tr>
 							</thead>
 							<tbody>
@@ -32,13 +32,23 @@
 									<td>
 										<h5>Buku Satu <span class="label label-default">Dari toko</span></h5>
 										<p>Pengiriman dari Jakarta</p>
-										<a href="#"><h6>Hapus</h6></a>
+										<button type="button" name="button" class="btn btn-link btn-sm">Hapus</button>
 									</td>
 									<td>
 										<p>Rp. 100.000</p>
 									</td>
 									<td>
-										<input type="number" class="form-control" placeholder="1" id="jumlah-buku">
+										<div class="form-group">
+											<div class="input-group">
+									      <span class="input-group-btn">
+									        <button class="btn btn-default" type="button">-</button>
+									      </span>
+									      <input class="form-control" placeholder="1" id="jumlah-buku">
+												<span class="input-group-btn">
+									        <button class="btn btn-default" type="button">+</button>
+									      </span>
+									    </div>
+										</div>
 									</td>
 								</tr>
 							</tbody>

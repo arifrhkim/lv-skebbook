@@ -17,6 +17,19 @@ body {
 	overflow: hidden;
 }
 
+.badge-notify {
+  background-color: orange;
+  position:relative;
+  top: -10px;
+  left: -15px;
+}
+
+.img-avatar {
+	margin-top: 10px;
+	max-height: 30px;
+	width:auto;
+}
+
 // Error Page
 .page-error {
 	margin-top: 10em;
@@ -390,6 +403,6 @@ body {
 		width: 100%;
 	}
 
-	
+
 
 }
